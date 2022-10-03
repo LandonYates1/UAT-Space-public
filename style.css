@@ -1,0 +1,8 @@
+#blinkText{
+    color: blue;
+    transition: 0.5 seconds;
+}
+body{
+    background-color: rebeccapurple;
+    color: white;
+}

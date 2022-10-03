@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="code.js"></script>
+        <script src="code2.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            UAT space website
+        </title>
+    </head>
+    <body>
+        <!--UatSpaceLogo -->
+        <img src="UATspaceLogo-1.jpg">
+        <h1 id="blinkText">
+            <blink>
+                UAT Space Program
+            </blink>
+        </h1>
+        <p>
+            Test of the paragraph tags.<br>
+            The paragraph tags are used in html to display more than one sentence.<br>
+            This can be more than one line of text.<br>
+        </p>
+        <script>
+            // alert("test of the alert function");
+            document.write("test of the document.write function");
+            var welcomeText="Welcome to UAT Space!";
+        </script>
+        <br>
+        <br>
+        <h2>Blastoff Timer</h2>
+        <div id= "countDis" The time will appear here fter the start is pressed.
+        br>
+    </div>
+        <button onclick="countdownTimer();">Start</button>
+        <br>
+        <button>Stop</button>
+        <script type="text/javascript">
+            var blink = document.getElementById('blinkText');
+            setInterval(function(){
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
+        </script>
+        <br>
+        <script>
+            //place to play craps
+        document.write("Simple Craps")
+        document.write("<br/>")
+            play();
+        </script>
+        <br>
+        <div id="Die1">Dice one result will go here.</div>
+        <br>
+        <div id="Die2">Dice two result will go here.</div>
+        <br>
+        <div id="Gameres">Game result will go here.</div>
+        <br>
+        <button onclick="playCraps();">Play Craps</button>
+    </body>
+</html>
