@@ -10,12 +10,110 @@
     </head>
     <body>
         <!--UatSpaceLogo -->
-        <img src="UATspaceLogo-1.jpg">
-        <h1 id="blinkText">
-            <blink>
-                UAT Space Program
-            </blink>
-        </h1>
+        <table>
+            <td> <img src="UATspaceLogo-1.jpg"></td>
+            <td><h1 id="blinkText">
+                <blink>
+                    UAT Space Program
+                </blink>
+            </h1></td>
+        </table>
+        <br>
+        <br>
+        <table border="2" width="70%">
+            <col style="width: 35%;">
+            <col style="width: 35%;">
+            <thead>
+                <th>Data Type</th>
+                <th>Reading</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Time Elapsed: </td>
+                    <td>15 seconds</td>
+                </tr>
+                <tr>
+                    <td>Latitude</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>longitude</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Gps Altitude</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>BMP Sensor Altitude</td>
+                    <td>30383.04</td>
+                </tr>
+                <tr>
+                    <td>BMP Sensor Pressure </td>
+                    <td>2.34</td>
+                </tr>
+                <tr>
+                    <td>BMP Sensor Temperature</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Digital Sensor Temperature </td>
+                    <td>24.12</td>
+                </tr>
+                <tr>
+                    <td>CsS Sensor Temperature </td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>CSS Sensor eCO2: </td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>CSS Sensor TVOC</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>UV</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Accel X:</td>
+                    <td>-0.87</td>
+                </tr>
+                <tr>
+                    <td>Accel Y: </td>
+                    <td>-0.02</td>
+                </tr>
+                <tr>
+                    <td>Accel Z: </td>
+                    <td>9.61</td>
+                </tr>
+                <tr>
+                    <td>Magnetic X:</td>
+                    <td>0.13</td>
+                </tr>
+                <tr>
+                    <td>Magnetic Y:</td>
+                    <td>0.57</td>
+                </tr>
+                <tr>
+                    <td>Magnetic Z:</td>
+                    <td>-0.24</td>
+                </tr>
+                <tr>
+                    <td>Gyro X:</td>
+                    <td>4.66</td>
+                </tr>
+                <tr>
+                    <td>Gyro Y:</td>
+                    <td>0.01</td>
+                </tr>
+                <tr>
+                    <td>Gyro Z:</td>
+                    <td>-0.4</td>
+                </tr>
+            </tbody>
+        </table>
         <p>
             Test of the paragraph tags.<br>
             The paragraph tags are used in html to display more than one sentence.<br>
@@ -56,5 +154,9 @@
         <div id="Gameres">Game result will go here.</div>
         <br>
         <button onclick="playCraps();">Play Craps</button>
+        <br>
+        <br>
+        <button onclick="startFun();" id="startButton">Start</button>
+        <button onclick="stopFun();" id="stopButton">Stop</button>
     </body>
 </html>

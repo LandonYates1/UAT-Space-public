@@ -134,3 +134,16 @@ function chgBtrCountdownTimer(){
         }, i * 5000)
     }
 }
+function startFun(){
+    
+    console.log("startFun() started")
+    // disable start button
+    document.getElementById("startButton").disabled = true;
+    // enable (disable!) - stop button
+    document.getElementById("stopButton").disabled = false;
+}
+function stopFun(){
+    console.log("stopFun() started")
+    document.getElementById("stopButton").disabled = true;
+    document.getElementById("startButton").disabled = false;
+}
