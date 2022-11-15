@@ -134,16 +134,33 @@ function chgBtrCountdownTimer(){
         }, i * 5000)
     }
 }
-function startFun(){
-    
-    console.log("startFun() started")
-    // disable start button
-    document.getElementById("startButton").disabled = true;
-    // enable (disable!) - stop button
-    document.getElementById("stopButton").disabled = false;
+//plays sound
+function playStation(){
+    console.log("playStation() started");
+    mySound = new sound("us-lab-background.mp3")
+    mySound.play();
 }
-function stopFun(){
-    console.log("stopFun() started")
-    document.getElementById("stopButton").disabled = true;
-    document.getElementById("startButton").disabled = false;
+//plays audio file of the sound "source"
+function sound(srcFile){
+    this.sound = document.createElement("audio");
+    this.sound.src = srcFile
+    //loads programs for audio into memory
+    this.sound.setAttribute("preload","audio");
+    // makes sure there are no controls on the screen
+    this.sound.setAttribute("controls","none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    //creates a function to play the sound
+    this.play = function(){
+        this.sound.play();
+    }
+    // creates a function to stop the sound from playing
+    this.stop = function(){
+        this.sound.pause();
+    }
+}
+function playBowie(){
+    console.log("playBowie() started");
+    mySound = new sound("us-lab-background.mp3")
+    mySound.play();
 }

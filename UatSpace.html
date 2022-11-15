@@ -3,24 +3,30 @@
     <head>
         <script src="code.js"></script>
         <script src="code2.js"></script>
+        <script src="phun.js"></script>
+        <script src="launchDataDisplay.js"></script>
         <link rel="stylesheet" href="style.css">
         <title>
             UAT space website
         </title>
+        <script>
+            var theTime = new Date();
+            var timeInterval = 5000;
+            var running = true;
+            var index = 0;
+            var timer;
+            var data = getData();
+        </script>
     </head>
     <body>
         <!--UatSpaceLogo -->
-        <table>
-            <td> <img src="UATspaceLogo-1.jpg"></td>
-            <td><h1 id="blinkText">
-                <blink>
-                    UAT Space Program
-                </blink>
-            </h1></td>
-        </table>
-        <br>
-        <br>
-        <table border="2" width="70%">
+        <img src="UATspaceLogo-1.jpg">
+        <h1 id="blinkText">
+            <blink>
+                UAT Space Program
+            </blink>
+        </h1>
+        <table border="1px" width="70%" id="dataTable">
             <col style="width: 35%;">
             <col style="width: 35%;">
             <thead>
@@ -28,6 +34,16 @@
                 <th>Reading</th>
             </thead>
             <tbody>
+                <tr id="seconds"></tr>
+                <tr id="latitude"></tr>
+                <tr id="longitude"></tr>
+                <tr id="gps_altitude"></tr>
+                <tr id="bmp_altitude"></tr>
+                <tr id="bmp_pressure"></tr>
+                <tr id="bmp_temperature"></tr>
+                <tr id="dig_temperatue"></tr>
+                <tr id="css_temperature"></tr>
+                <tr id="seconds"></tr>
                 <tr>
                     <td>Time Elapsed: </td>
                     <td>15 seconds</td>
@@ -154,9 +170,15 @@
         <div id="Gameres">Game result will go here.</div>
         <br>
         <button onclick="playCraps();">Play Craps</button>
+        <h1>Play a sound</h1>
+        <button class="buttonLg" onclick="playStation();">Play space station sounds.</button>
+        <br>
+        <button class="buttonLg" onclick="playBowie();">Play David Bowie's Space Oddity</button>
+        <h1>Sandbox</h1>
+        <h2>making arrays</h2>
+        <button class="button" onclick="myClasses()">Array Test 1</button>
         <br>
         <br>
-        <button onclick="startFun();" id="startButton">Start</button>
-        <button onclick="stopFun();" id="stopButton">Stop</button>
+        <button onclick="stackPhun()" class="button">Array Test 2</button>
     </body>
 </html>

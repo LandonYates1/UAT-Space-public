@@ -1,7 +1,7 @@
 #UML diagram for csc 102 by Landon Yates<br>
 #LANYATES@uat.edu
 
-```mermaid
+:::mermaid
 ClassRocket{
     Class size{
         -length : int
@@ -32,6 +32,18 @@ Class rocketScientist{
     payMonthly : int
     payYearly : int
 }
-size <|-- length
-size <|-- width
-```
+size <|-- length;
+size <|-- width;
+length <|-- getLength;
+length <|-- setLength;
+width <|-- getWidth;
+width <|-- setWidth;
+rocketScientist <|-- name;
+rocketScientist <|-- Department;
+rocketScientist <|--Money;
+department <|-- job;
+department <|-- hours;
+Money <|-- payHourly;
+Money <|-- payMonthly;
+Money <|-- payYearly;
+:::
