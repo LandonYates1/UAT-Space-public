@@ -164,3 +164,22 @@ function playBowie(){
     mySound = new sound("us-lab-background.mp3")
     mySound.play();
 }
+function startFun(){
+    console.log("startFun() started");
+    //disable start button
+    document.getElementById("startbutton").disabled = true;
+    //enable disabled stop button
+    document.getElementById("stopbutton").disabled = false;
+    //runs updateDisplay
+    document.getElementById("dataTable").rows["seconds"].innerHTML = "reading data";
+    index = 0;
+    timer = setInterval(updateDataDisplay, timeInterval);
+}
+function stopFun(){
+    console.log("stopFun() started");
+    //disable stop button
+    document.getElementById("stopbutton").disabled = true;
+    //enable disabling of start button
+    document.getElementById("startbutton").disabled = false;
+    clearInterval(timer);
+}
